@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .parent1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        img{
+            width: 100%;
+        }
+        .parent2,.parent3{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        .parent4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            
+            text-align: center;
+        }
+        .box>div{
+            width: 33.33%;
+      
+        }
+        .parent4 img{
+            width: 40%;
+        }
+        .parent5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2px;
+            width: 50%;
+        }
+        .side1,.side2 {
+            display: flex;
+            gap: 30px;
+            text-align: center;
+
+            
+        }
+        .side1 img,.side2 img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1">
+            <img src="https://assets.codepen.io/210284/header.png" alt=""width:50%>
+        </div>
+        <div>
+            <h1>Creating responsive email magic</h1>
+            <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus!</p>
+        </div>
+    </div>
+    <div class="parent2">
+        <div class="img1">
+            <img src="https://assets.codepen.io/210284/two-column-01.png" alt="" width:50%>
+        </div>
+        <div class="content1">
+            <h3>Taciti nostra, per litora nostra</h3>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas sed ante pellentesque.</p>
+            <p style="display: inline;border: 2px solid lightblue;padding: 6px 4px;">Claim yours now</p>
+        </div>
+    </div>
+    <div class="parent3">
+        <div class="content2">
+            <h3>Conubia nostra, per inceptos himenaeos</h3>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas sed ante pellentesque.</p>
+            <p style="display: inline;border: 2px solid lightblue;padding: 6px 4px; font-weight: bold;">Look it in</p>
+        </div>
+        <div class="img2">
+            <img src="https://assets.codepen.io/210284/two-column-02.png" alt="" width:50%>
+        </div>
+    </div>
+    <div class="parent4">
+        <h1>Praesent laoreet malesuada cursus</h1>
+        <p>Posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora!</p>
+        <div class="box">
+            <div>
+                <img src="https://assets.codepen.io/210284/three-column-01.png" alt="" width="20%">
+                <p>Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+            </div>
+            <div>
+                <img src="https://assets.codepen.io/210284/three-column-02.png" alt="">
+                <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+            </div>
+            <div>
+                <img src="https://assets.codepen.io/210284/three-column-03.png" alt="">
+                <p>Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere.</p>
+            </div>
+            <div>
+                <img src="https://assets.codepen.io/210284/three-column-04.png" alt="">
+                <p>Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere.</p>
+            </div>
+            <div>
+                <img src="https://assets.codepen.io/210284/three-column-05.png" alt="">
+                <p>Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere.</p>
+            </div>
+            <div>
+                <img src="https://assets.codepen.io/210284/three-column-06.png" alt="">
+                <p>Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere.</p>
+            </div>
+        </div>
+    </div>
+    <div class="parent5">
+        <div class="side1">
+            <img src="https://assets.codepen.io/210284/sidebar-01.png" alt="" width="200px"height="75px">
+            <p>Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.<a style="color: chocolate; font-weight: bold;"href="Read on">Read on</a> </p>
+        </div>
+        <div class="side2">
+            <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostraa<a style="color: chocolate;font-weight: bold;"href="Register today">Register today</a></p>
+            <img src="https://assets.codepen.io/210284/sidebar-02.png" alt="" width="150px"height="75px">
+        </div>
+    </div>
+</body>
+</html>
